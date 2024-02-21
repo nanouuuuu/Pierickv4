@@ -1,0 +1,47 @@
+<%= form_with(model: poisson) do |form| %>
+  <% if poisson.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(poisson.errors.count, "error") %> prohibited this poisson from being saved:</h2>
+
+      <ul>
+        <% poisson.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_area :image %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :rarity, style: "display: block" %>
+    <%= form.text_field :rarity %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :nutriscore, style: "display: block" %>
+    <%= form.text_field :nutriscore %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

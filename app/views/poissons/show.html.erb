@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @poisson %>
+
+<div>
+  <%= link_to "Edit this poisson", edit_poisson_path(@poisson) %> |
+  <%= link_to "Back to poissons", poissons_path %>
+
+  <%= button_to "Destroy this poisson", @poisson, method: :delete %>
+</div>
