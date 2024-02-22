@@ -1,23 +1,26 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Poissons</h1>
-    <%= link_to "Nouveau poisson", new_poisson_path %>
 
+<div class="container">
 
-  <div class="pierick">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ4hqtMsnx95N0dSwKhWJ3SyVlplNsdseEMA&usqp=CAU">
+  <h2>La Boutique de Pierick</h2>
+
+  <%= link_to "Nouveau poisson", new_poisson_path, class: "btn btn-primary btn_create" %>
+
+    <div class="pierick">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ4hqtMsnx95N0dSwKhWJ3SyVlplNsdseEMA&usqp=CAU">
+    </div>
+
+  <div class="row ">
+    <div id="poissons" class="row"> 
+
+        <% @poissons.each do |poisson| %>
+      <div class="col-lg-4">
+          <%= render poisson %>
+
+            <%= link_to "Show this poisson", poisson, class: "btn-show" %>
+      </div>
+    <% end %>
   </div>
 
-
-<div id="poissons" class="row"> 
-
-    <% @poissons.each do |poisson| %>
-   <div class="col-lg-4">
-      <%= render poisson %>
-      
-
-  </div>
-<% end %>
-
-    
 </div>
