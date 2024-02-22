@@ -1,22 +1,15 @@
+<div class="card col-lg-12" id="<%= dom_id poisson %>" >
 
-  <div class="all">
+<div>
 
-    <div class="card" style="width: 18rem;" id="<%= dom_id poisson %>">
+  <img style="whidth: 200px; height: 130px;" src="<%= poisson.image %>" lt="illustration de la carter"> 
+    <p class="rarity">
+    <%= poisson.rarity %>
+  </p>
+</div>
 
-            <strong></strong>
-                    <img style="whidth: 200px; height: 130px;" src="<%= poisson.image %>"> 
-                
-                <div class="rarity">
-                  <p>
-                    <%= poisson.rarity %>
-                  </p>
-                </div>
 
-          <div class="card-body">
-
-              
-              
-                  <p>
+<p>
                     <strong>Name:</strong>
                     <%= poisson.name %>
                   </p>
@@ -36,13 +29,7 @@
                     <strong>Nutriscore:</strong>
                     <%= poisson.nutriscore %>
                   </p>
-          </div>
 
-          <p class="affichage">
-            <%= link_to "Afficher ce poisson", poisson %>
-          </p>
-          
 
-    </div>
 
-  </div>
+</div>

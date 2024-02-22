@@ -1,25 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Poissons</h1>
+    <%= link_to "Nouveau poisson", new_poisson_path %>
 
-<div class="tous">
 
-  
   <div class="pierick">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ4hqtMsnx95N0dSwKhWJ3SyVlplNsdseEMA&usqp=CAU">
   </div>
 
-  <div id="poissons" class="carte"> 
+
+<div id="poissons" class="row"> 
+
     <% @poissons.each do |poisson| %>
+   <div class="col-lg-4">
       <%= render poisson %>
       
-    <% end %>
-
 
   </div>
-
+<% end %>
 
     
 </div>
-
-    <%= link_to "Nouveau poisson", new_poisson_path %>
