@@ -1,32 +1,47 @@
-<h1>Ceci est une boutique de poissons</h1>
-<div class="card" id="<%= dom_id poisson %>">
-  <p>
-    <strong>Name:</strong>
-    <%= poisson.name %>
-  </p>
 
+  <div class="all">
 
-    <strong>Image:</strong>
-     <img src="<%= poisson.image %>">  
+    <div class="card" style="width: 18rem;" id="<%= dom_id poisson %>">
 
-  <p>
-    <strong>Price:</strong>
-    <%= poisson.price %>
-  </p>
+            <strong></strong>
+                    <img style="whidth: 200px; height: 130px;" src="<%= poisson.image %>"> 
+                
+                <div class="rarity">
+                  <p>
+                    <%= poisson.rarity %>
+                  </p>
+                </div>
 
-  <p>
-    <strong>Rarity:</strong>
-    <%= poisson.rarity %>
-  </p>
+          <div class="card-body">
 
-  <p>
-    <strong>Description:</strong>
-    <%= poisson.description %>
-  </p>
+              
+                  <p>
+                    <strong>Name:</strong>
+                    <%= poisson.name %>
+                  </p>
+                  <p>
+                    <strong>Price:</strong>
+                    <%= poisson.price %>
+                  </p>
 
-  <p>
-    <strong>Nutriscore:</strong>
-    <%= poisson.nutriscore %>
-  </p>
+                  
 
-</div>
+                  <p>
+                    <strong>Description:</strong>
+                    <%= poisson.description %>
+                  </p>
+
+                  <p>
+                    <strong>Nutriscore:</strong>
+                    <%= poisson.nutriscore %>
+                  </p>
+          </div>
+
+          <p class="affichage">
+            <%= link_to "Afficher ce poisson", poisson %>
+          </p>
+          
+
+    </div>
+
+  </div>

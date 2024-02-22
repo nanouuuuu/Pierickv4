@@ -2,13 +2,24 @@
 
 <h1>Poissons</h1>
 
-<div id="poissons">
-  <% @poissons.each do |poisson| %>
-    <%= render poisson %>
-    <p>
-      <%= link_to "Afficher ce poisson", poisson %>
-    </p>
-  <% end %>
+<div class="tous">
+
+  
+  <div class="pierick">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ4hqtMsnx95N0dSwKhWJ3SyVlplNsdseEMA&usqp=CAU">
+  </div>
+
+  <div id="poissons" class="carte"> 
+    <% @poissons.each do |poisson| %>
+      <%= render poisson %>
+      
+    <% end %>
+
+
+  </div>
+
+
+    
 </div>
 
-<%= link_to "Nouveau poisson", new_poisson_path %>
+    <%= link_to "Nouveau poisson", new_poisson_path %>
