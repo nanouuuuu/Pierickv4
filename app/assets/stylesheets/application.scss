@@ -345,3 +345,27 @@ h3{
   margin:20px;
 
 }
+
+
+/* Ajoutez ces media queries à la fin de votre fichier CSS */
+
+/* Pour les écrans de taille moyenne */
+@media (max-width: 991px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 49%; /* Deux cartes par ligne pour les écrans de taille moyenne */
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 767px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 100%; /* Une carte par ligne pour les écrans plus petits */
+    margin-bottom: 1.5rem;
+    padding: 0 15px; /* Rétablir la marge intérieure pour compenser la marge négative de la row */
+  }
+}
+
+/* Le reste de votre CSS reste inchangé */
