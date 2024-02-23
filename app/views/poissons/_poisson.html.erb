@@ -18,7 +18,7 @@
                               <p class="wave-card-subtitle"><%= poisson.price %></p>
                               
                               <div class="rarenutri">
-                                <img class="nutri" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nutri-score-B.svg/1920px-Nutri-score-B.svg.png">
+                                <%= image_tag "#{poisson.nutriscore}.png", class: 'nutri' %>
                                 <p class="rarity"><%= poisson.rarity %></p>
                               </div>
                             </div>
