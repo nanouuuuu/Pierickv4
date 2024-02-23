@@ -18,9 +18,16 @@
  .row {
   --bs-gutter-x: 3.5rem;
   --bs-gutter-y: 1.5rem;
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   padding-left: 3rem;
+  margin: 0 -15px;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.333%; /* Utilisez une largeur de 33.333% pour que trois cartes tiennent sur une ligne */
+  padding: 0 15px; /* Ajoutez une marge intérieure pour compenser la marge négative de la row */
 }
 
 /*Carte 
