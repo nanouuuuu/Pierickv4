@@ -368,3 +368,36 @@ h3{
 }
 
 /* Le reste de votre CSS reste inchangé */
+
+
+.container_pierick {
+  position: relative;
+  display: inline-block;
+  margin-left: 20rem;
+}
+
+.img_pierick{
+  height: 25rem;
+  width: 40rem;
+  object-fit: cover;
+}
+
+.texte-survol {
+  position: sticky;
+  bottom: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  left: 4rem;
+  visibility: hidden;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10rem;
+  margin-left: 2rem;
+}
+
+.container:hover .texte-survol {
+  visibility: visible;
+}
