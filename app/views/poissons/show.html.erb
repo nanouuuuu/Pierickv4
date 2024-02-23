@@ -9,10 +9,10 @@
     <%= render @poisson %>
   </div>
 
-  <div>
+  <div class="edit_delet">
     <%= link_to "Edit this poisson", edit_poisson_path(@poisson), class:"btn btn-warning col-lg-4" %>
-    <%= link_to "Back to poissons", poissons_path, class:"btn btn-primary col-lg-4" %>
     <%= button_to "Supprimer ce poisson", @poisson, method: :delete, class:"btn btn-danger col-lg-4" %>
   </div>
+   <%= link_to "Back to poissons", poissons_path, class:"btn btn-primary col-lg-4" %>
 
 </div>

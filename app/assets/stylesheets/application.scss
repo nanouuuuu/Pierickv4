@@ -15,6 +15,30 @@
  */
  @import "bootstrap";
 
+h1{
+  color: white;
+  margin-right: 5%;
+}
+
+h2{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+  margin-bottom: -2%;
+}
+
+.row {
+  --bs-gutter-x: 3.5rem;
+  --bs-gutter-y: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3rem;
+}
+
+/*Carte */
+
 .card-body{
   padding: 1rem;
   margin-bottom: 1rem;
@@ -24,43 +48,7 @@
   padding: 10px;
 }
 
-.images{
- z-index: 2;
- position: relative;
-}
-
-.rarity strong{
- color: antiquewhite;
-}
-
-.rarity p{
- color: #fff;
-}
-
-.rarity{
- background-color: #a87e7e;
- color: #fff;
- text-align: center;
- padding-top: 2px;
- margin-top: 1rem;
- margin-left: 7rem;
- margin-right: 7rem;
- border-radius: 10px;
-}
-
-
-a{
-  text-decoration: none;
-  border-radius: 6px;
-  margin: 8rem;
-  background: #b0fff4;
-  color: #000000;
-  box-shadow: #b3b3b3;
-  padding: 9px;
-}
-
-
- .card{
+.card{
   border: #000 solid 4px;
   border-radius: 3%;
   height: 400px;
@@ -77,60 +65,82 @@ a{
 
 }
 
+/*images*/
+.images{
+ z-index: 2;
+ position: relative;
+}
+
 img{
   margin: 4px;
 }
 
 .pierick{
   margin-bottom: 3.5rem;
-  border: 5px solid black;
   padding: 0;
   width: 100%;
+  height: 80%;
 }
 
 .pierick img{
-  height: 180px;
+  height: 50%;
   width: 99%;
 }
 
-.btn{
-  margin-bottom: 1.5rem;
+/*niveau de raretr*/
+.rarity strong{
+ color: antiquewhite;
 }
+
+.rarity p{
+ color: #fff;
+}
+
+.rarity{
+ background-color: goldenrod;
+ color: #fff;
+ text-align: center;
+ padding-top: 2px;
+ margin-top: 1rem;
+ margin-left: 7rem;
+ margin-right: 7rem;
+ border-radius: 10px;
+}
+
+/* BTN derrière de la carte 
+
+.edit_delet{
+  padding: 1rem;
+  margin: 0;
+  display: grid;
+}
+
+.btn-warning{
+  width: 100%;
+}
+
+.btn-danger{
+
+}
+*/
+
+/*BTN  page index*/
+
+/*
 
 .create_form{
   display: flex;
   justify-content: center;
 }
 
-
-h4{
-  text-align: center;
-  margin-bottom: -2%;
-}
-
-
-h1{
-  color: white;
-  margin-right: 5%;
-}
-
-h2{
-  text-align: center;
-}
-
-.logo{
-  width: 25%;
-}
-
 .btn_show{
-  background-color: #00c1f4;
-  color: white;
   text-decoration: none;
   margin-top: 2%;
   padding: 3%;
   border-radius: 10px;
   text-align: center;
 }
+*/
 
 .btn_create{
   justify-content: center;
@@ -138,16 +148,19 @@ h2{
   margin-right: auto;
 }
 
-html{
-  scroll-behavior: smooth;
+a{
+  text-decoration: none;
+  border-radius: 6px;
+  background: #00b652;
+  color: #000000;
+  padding: 9px;  
+  align-items: center;
 }
 
-.row {
-  --bs-gutter-x: 3.5rem;
-  --bs-gutter-y: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+@media (min-width: 992px){
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 37.333%;
+
+  }
 }
