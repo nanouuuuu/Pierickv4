@@ -37,13 +37,8 @@
   </div>
 
   <div>
-    <select name="poisson[nutriscore]">
-      <% ['A', 'B', 'C', 'D', 'E'].each do |score| %>
-        <option value="<%= score %>" <% if poisson.nutriscore == score %>selected="selected"<% end %>>
-          <%= score %>
-        </option>
-      <% end %>
-    </select>
+    <%= form.label :nutriscore, style: "display: block" %>
+    <%= form.text_area :nutriscore%>
   </div>
 
   <div>
