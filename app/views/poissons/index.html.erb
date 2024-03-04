@@ -5,14 +5,16 @@
 
   <h2>La Boutique de Pierick</h2>
 
-  <%= link_to "Nouveau poisson", new_poisson_path, class: "btn btn-primary btn_create" %>
+  <%= link_to "Pécher un nouveau poisson", new_poisson_path, class: "btn btn-primary btn_create" %>
 
     
 <div class="container_pierick">
   <img class="img_pierick" src="https://media.discordapp.net/attachments/725870884606181388/1210542361436753930/pierick.png?ex=65eaf06d&is=65d87b6d&hm=2193205241914918ab3ea7468ef32bcc50c168b86b9253dbd80f9b96ea20b7d8&=&format=webp&quality=lossless&width=625&height=625" alt="Image descriptive">
   <div class="texte-survol">
-    bienvenu dans ma poissonerie <br>
-    survol sur les carte pour decoubrir mes poissons
+    Argh, moussaillon, bienvenu à la Poissonnerie de Pierick,<br>
+    l'endroit où les trésors de la mer s'étalent devant toi !<br>
+    Je suis Pierick, ton vendeur de poissons intrépide.<br>
+    Jette l'ancre sur l'un de ces poissons et découvre ses secrets des profondeurs !
   </div>
 </div>
 
@@ -25,7 +27,7 @@
           <%= render poisson %>
 
             <%= link_to "Modifier ce poisson", poisson, class: "btn-warning" %>
-            <%= link_to "Supprimer ce poisson", poisson, class: "btn-danger" %>
+            <%= link_to "Relâcher ce poisson à la mer", poisson, class: "btn-danger" %>
 
       </div>
 
