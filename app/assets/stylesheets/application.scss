@@ -96,6 +96,7 @@ ol {
 
 body {
   font-family : 'Alata';
+  background-image: url("https://i.ibb.co/r7vQRyq/fishbackgroundimg.png")
 }
 
 h1{
@@ -122,7 +123,8 @@ h3{
   height:100%;
   transform-style: preserve-3d;
   transition: all .5s linear;
-  border:#F7E5B0
+  border:#E3B584;
+  background:#E3B584;
 }
 .face {
   position: absolute;
@@ -157,18 +159,11 @@ h3{
 }
 .front{
   z-index:1;
-  box-shadow: 11px 17px 48px #e5e5e5;
 }
 
 .flipped, .hovercard:hover{
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  .front{
-    box-shadow: 11px 17px 48px #e5e5e5;
-  }
-  .back{
-    box-shadow: 11px 17px 48px #e5e5e5;
-  }
 }
 
 
@@ -320,7 +315,6 @@ h3{
   left: 4rem;
   visibility: hidden;
   color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
   border: 1px solid black;
   padding: 5px;
   margin-left: 2rem;
