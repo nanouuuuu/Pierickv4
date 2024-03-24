@@ -53,53 +53,6 @@ img{
   width: 50%;
 }
 
-/*niveau de raretr
-.rarity strong{
- color: antiquewhite;
-}
-
-.rarity p{
- color: #fff;
-}
-
-.rarity{
- background-color: goldenrod;
- color: #fff;
- text-align: center;
- padding-top: 2px;
- margin-top: 1rem;
- margin-left: 7rem;
- margin-right: 7rem;
- border-radius: 10px;
-}
-*/
-/* BTN derrière de la carte 
-
-.edit_delet{
-  padding: 1rem;
-  margin: 0;
-  display: grid;
-}
-
-.btn-warning{
-  width: 100%;
-}
-
-.btn-danger{
-
-}
-*/
-
-/*BTN  page index*/
-
-/*
-
-.create_form{
-  display: flex;
-  justify-content: center;
-}
-*/
-
 .btn_create{
   justify-content: center;
   margin-left: auto;
@@ -169,15 +122,14 @@ h3{
   height:100%;
   transform-style: preserve-3d;
   transition: all .5s linear;
+  border:#F7E5B0
 }
 .face {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color:whitesmoke;  
-  border-radius:10px;
+  backface-visibility: hidden; 
 }
 .back {
   overflow:hidden;
@@ -207,9 +159,7 @@ h3{
   z-index:1;
   box-shadow: 11px 17px 48px #e5e5e5;
 }
-.back{
-  box-shadow: 0 0 0 #aaa;
-}
+
 .flipped, .hovercard:hover{
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
